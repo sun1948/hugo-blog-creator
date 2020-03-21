@@ -4,35 +4,39 @@ date: 2020-03-21T14:38:44+08:00
 draft: false
 ---
 
-总体来说用hugo搭建个人博客分为两块：
-1. 编辑博客内容，我用的是vscode
-2. 终端生成public目录，上传到github
-   
+总体来说用 hugo 搭建个人博客分为两块：
+
+1. 编辑博客内容，我用的是 vscode
+2. 终端生成 public 目录，上传到 github
+
 下面分步骤操作
-# 1.安装hugo
-mac用homebrew安装hugo很简单，终端运行 `brew install hugo`
+
+## 1.安装 hugo
+
+mac 用 homebrew 安装 hugo 很简单，终端运行 `brew install hugo`
 
 运行 `hugo version` ，看到版本号就成功了。
-# 2.打开[hugo官网](https://gohugo.io/)，照着教程走
-点击quick start，按照官网上面的教程，完成7步，即可以创建public目录，用来上传到github。
 
-注意:在第6步“Site Configuration”时，如果有自己的域名，不想用github提供的默认域名，可以修改baseURL。
-# 3.上传static pages到github
-为了上传public目录，先在github上创建一个repo。
+## 2.照着 hugo 官网教程走
 
-然后在终端里， `cd public` ，接着git add/ git commit/ git add remote origin git@xxxxxxx /git push，4连操作上传public目录。
-# 4.配置repo里的GitHub Pages
-完成上传后，打开github，在对应repo里进入settings，下拉有看到GitHub Pages，设置source为master branch，页面自动刷新后，再次下拉到GitHub Pages处会出现类似链接：
+进入[hugo 官网](https://gohugo.io/)点击 quick start，按照官网上面的教程，完成 7 步，即可以创建 public 目录，用来上传到 github。
 
-![](../../public/images/截屏2020-03-21下午4.40.52.png)
+注意:在第 6 步“Site Configuration”时，如果有自己的域名，不想用 github 提供的默认域名，可以修改 baseURL。
 
-打开链接，即可预览博客
+## 3.上传 static pages 到 github
 
-其他的
-* 可以备份整个博客源代码目录到github，但要创建.gitignore文件并添加public/以忽略它，以免push时出错
-* 若新增其他博客或者修改之前的博客，操作就简单了，直接运行hugo教程里的Add Some Content，再完成第5步和第7步，最后在public目录下进行git add、git commit、git push 3连操作就可以了
-* 总之，感觉用hugo写博客确实麻烦，可能我是新手白又白，老师也推荐直接知乎、掘金上写博客就好了
+为了上传 public 目录，先在 github 上创建一个 repo。
 
-  
-  
+然后在终端里， `cd public` ，接着 git add/ git commit/ git add remote origin git@xxxxxxx /git push，4 连操作上传 public 目录。
+
+## 4.配置 repo 里的 GitHub Pages
+
+完成上传后，打开 github，在对应 repo 里进入 settings，下拉有看到 GitHub Pages，设置 source 为 master branch，页面自动刷新后，再次下拉到 GitHub Pages 处会出现绿色的链接，打开链接即可预览博客
+
+## 其他的
+
+- 可以备份整个博客源代码目录到 github，但要创建.gitignore 文件并添加 public/以忽略它，以免 push 时出错
+- 若新增其他博客或者修改之前的博客，操作就简单了，直接运行 hugo 教程里的 Add Some Content，再完成第 5 步和第 7 步，最后在 public 目录下进行 git add、git commit、git push 3 连操作就可以了
+- 总之，感觉用 hugo 写博客确实麻烦，可能我是新手白又白，老师也推荐直接知乎、掘金上写博客就好了
+
 The End
