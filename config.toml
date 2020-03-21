@@ -1,0 +1,4 @@
+baseURL = "http://sunzhaowei.site/"
+languageCode = "zh-Hans"
+title = "伟伟的博客"
+theme = "ananke"
